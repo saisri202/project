@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="theme-color" content="#071d18">
+<meta name="description" content="Yedlapalli Greenenergy Private Limited — integrated solar manufacturing and energy storage project in Andhra Pradesh.">
+<title>Yedlapalli Greenenergy | Energy, Reimagined</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--forest:#103d32;--forest2:#174f40;--lime:#c9f36b;--cream:#f6f7f1;--white:#fff;--ink:#17251f;--muted:#6b7770;--line:#e5e9e1;--gold:#d9b66f}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:"DM Sans",sans-serif;color:var(--ink);background:var(--cream);line-height:1.65}
+h1,h2,h3,.logo{font-family:Manrope,sans-serif;letter-spacing:-.04em}
+a{text-decoration:none;color:inherit}
+img{display:block;max-width:100%}
+.container{width:min(1180px,91%);margin:auto}
+.topline{background:var(--forest);color:#dce9df;font-size:12px;letter-spacing:.08em;padding:9px 0}
+.topline .container{display:flex;justify-content:space-between;gap:20px}
+header{position:sticky;top:0;z-index:100;background:rgba(246,247,241,.94);backdrop-filter:blur(15px);border-bottom:1px solid rgba(16,61,50,.1)}
+.nav{height:82px;display:flex;align-items:center;justify-content:space-between;gap:28px}
+.brand{display:flex;align-items:center;gap:11px;color:var(--forest)}
+.brand-mark{height:42px;width:42px;border-radius:14px;background:var(--lime);display:grid;place-items:center;font-size:23px;color:var(--forest);font-weight:800}
+.logo{font-size:15px;font-weight:800;line-height:1.15;letter-spacing:-.02em}
+.logo small{display:block;font:600 9px "DM Sans";letter-spacing:.2em;margin-top:4px;color:#748078}
+nav{display:flex;align-items:center;gap:29px;font-size:13px;font-weight:700;color:#536159}
+nav a{transition:.2s}nav a:hover{color:#16845c}
+.nav-btn{background:var(--forest);color:white;padding:13px 19px;border-radius:4px;font-size:12px;font-weight:700;letter-spacing:.04em;transition:.2s}
+.nav-btn:hover{background:#237458;transform:translateY(-2px)}
+.menu{display:none;border:0;background:none;font-size:25px;color:var(--forest)}
+.hero{background:var(--forest);color:white;position:relative;overflow:hidden}
+.hero:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(7,35,28,.96) 0%,rgba(7,35,28,.88) 44%,rgba(7,35,28,.18) 100%),url("https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&w=2000&q=85") center/cover}
+.hero-inner{position:relative;z-index:1;min-height:650px;display:flex;align-items:center;padding:95px 0}
+.hero-copy{max-width:670px}
+.kicker{display:flex;align-items:center;gap:12px;color:var(--lime);font-size:11px;font-weight:800;letter-spacing:.2em;text-transform:uppercase}
+.kicker:before{content:"";height:1px;width:34px;background:var(--lime)}
+h1{font-size:clamp(46px,6.5vw,82px);line-height:1.03;margin:26px 0 24px;font-weight:700}
+h1 em{font-style:normal;color:var(--lime)}
+.hero-copy p{max-width:570px;color:#d4e1d8;font-size:17px;line-height:1.8}
+.actions{display:flex;gap:13px;flex-wrap:wrap;margin-top:35px}
+.btn{display:inline-flex;align-items:center;gap:18px;padding:15px 21px;font-size:12px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;transition:.2s}
+.btn-primary{background:var(--lime);color:var(--forest)}
+.btn-primary:hover{background:white;transform:translateY(-3px)}
+.btn-ghost{border:1px solid #ffffff70;color:white}
+.btn-ghost:hover{background:#ffffff18}
+.hero-note{margin-top:65px;padding-top:19px;border-top:1px solid #ffffff35;display:flex;gap:34px;flex-wrap:wrap;color:#c7d8cd;font-size:12px}
+.hero-note strong{color:white;display:block;font:700 18px Manrope}
+.metrics{background:var(--lime);padding:26px 0}
+.metric-grid{display:grid;grid-template-columns:repeat(4,1fr)}
+.metric{padding:8px 26px;border-right:1px solid #9fca52}
+.metric:first-child{padding-left:0}.metric:last-child{border:0}
+.metric strong{display:block;color:var(--forest);font:800 30px Manrope;letter-spacing:-.05em}
+.metric span{font-size:11px;color:#425d35;font-weight:700;letter-spacing:.06em;text-transform:uppercase}
+section{padding:105px 0}
+.section-head{max-width:700px;margin-bottom:48px}
+.eyebrow{color:#4e8c61;font-size:11px;font-weight:800;letter-spacing:.2em;text-transform:uppercase}
+h2{font-size:clamp(34px,4vw,52px);line-height:1.12;color:var(--forest);margin:14px 0 17px}
+.lead{font-size:16px;color:var(--muted);max-width:650px}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:75px;align-items:center}
+.about-photo{height:490px;position:relative}
+.about-photo img{width:100%;height:100%;object-fit:cover;border-radius:3px}
+.photo-tag{position:absolute;bottom:25px;left:-25px;background:var(--lime);color:var(--forest);padding:22px 26px;max-width:220px}
+.photo-tag b{display:block;font:800 28px Manrope}.photo-tag span{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.08em}
+.about-copy .lead{margin-bottom:28px}
+.checks{display:grid;grid-template-columns:1fr 1fr;gap:14px 20px;margin-top:27px}
+.check{font-size:13px;font-weight:700;color:#405148;display:flex;gap:10px;align-items:flex-start}
+.check i{font-style:normal;color:#4b9b62;font-size:17px}
+.products{background:#eceedf}
+.product-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.product{background:white;min-height:410px;position:relative;overflow:hidden;transition:.3s}
+.product:hover{transform:translateY(-7px);box-shadow:0 22px 45px #102f2018}
+.product img{height:220px;width:100%;object-fit:cover;transition:.5s}
+.product:hover img{transform:scale(1.04)}
+.product-content{padding:25px}
+.product-no{font-size:10px;color:#7b987e;font-weight:800;letter-spacing:.15em}
+.product h3{font-size:22px;color:var(--forest);margin:8px 0}
+.product p{font-size:13px;color:var(--muted)}
+.product-foot{display:flex;justify-content:space-between;align-items:center;margin-top:20px;padding-top:15px;border-top:1px solid var(--line)}
+.product-foot b{font:800 20px Manrope;color:#2b7752}.product-foot span{font-size:10px;color:var(--muted);text-transform:uppercase;letter-spacing:.1em}
+.process{background:var(--forest);color:white}
+.process h2{color:white}.process .lead{color:#c4d4c9}
+.process-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:0;margin-top:52px;border-top:1px solid #ffffff35}
+.process-step{padding:26px 22px 15px 0;border-right:1px solid #ffffff35;margin-right:22px}
+.process-step:last-child{border:0}
+.process-step .number{color:var(--lime);font:800 13px Manrope}
+.process-step h3{font-size:18px;margin:22px 0 9px}
+.process-step p{font-size:12px;color:#c3d4c9}
+.location-grid{display:grid;grid-template-columns:.95fr 1.05fr;gap:65px;align-items:center}
+.location-image{height:440px;position:relative}
+.location-image img{width:100%;height:100%;object-fit:cover}
+.location-image:after{content:"VISAKHAPATNAM · ANDHRA PRADESH";position:absolute;bottom:0;left:0;background:var(--lime);padding:14px 18px;color:var(--forest);font-size:10px;font-weight:800;letter-spacing:.12em}
+.reasons{margin-top:28px;display:grid;gap:17px}
+.reason{display:grid;grid-template-columns:42px 1fr;gap:13px}
+.reason-icon{height:38px;width:38px;background:#e5efdc;display:grid;place-items:center;color:#36764e;font-size:18px}
+.reason h3{font-size:14px;color:var(--forest);margin-bottom:3px}
+.reason p{font-size:12px;color:var(--muted)}
+.infrastructure{background:white}
+.info-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.info-card{border:1px solid var(--line);padding:30px;background:#fbfcf8}
+.info-card h3{font-size:19px;color:var(--forest);margin-bottom:24px}
+.data-row{margin:18px 0}
+.data-label{display:flex;justify-content:space-between;gap:10px;font-size:12px;font-weight:700;color:#4c5b52;margin-bottom:7px}
+.data-label b{color:var(--forest)}
+.track{height:6px;background:#e7ece4}.fill{height:100%;background:#76a85e}
+.timeline{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;margin-top:55px}
+.phase{border-top:3px solid var(--lime);padding-top:17px}
+.phase small{font-size:10px;font-weight:800;letter-spacing:.12em;color:#56845a}
+.phase h3{font-size:16px;color:var(--forest);margin:7px 0}
+.phase p{font-size:12px;color:var(--muted)}
+.future{background:#eceedf}
+.future-banner{background:var(--forest);color:white;display:grid;grid-template-columns:1fr auto;gap:30px;align-items:center;padding:45px}
+.future-banner h3{font:700 27px Manrope;margin:9px 0}
+.future-banner p{font-size:13px;color:#c7d8cd;max-width:720px}
+.target{height:125px;width:125px;border:1px solid #c9f36b;border-radius:50%;display:grid;place-items:center;text-align:center;color:var(--lime);font:800 26px Manrope}
+.target small{display:block;font:600 9px "DM Sans";letter-spacing:.12em}
+.battery-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:20px}
+.battery{background:white;padding:28px;display:flex;gap:18px}
+.battery-icon{font-size:28px}.battery h3{font-size:18px;color:var(--forest);margin-bottom:7px}.battery p{font-size:12px;color:var(--muted)}
+.impact{background:#fff}
+.impact-grid{display:grid;grid-template-columns:1fr 1fr;gap:65px;align-items:center}
+.impact-photo{height:390px}.impact-photo img{height:100%;width:100%;object-fit:cover}
+.job-numbers{display:grid;grid-template-columns:1fr 1fr;gap:13px;margin-top:27px}
+.job{background:var(--cream);padding:20px}.job strong{font:800 29px Manrope;color:var(--forest);display:block}.job span{font-size:11px;color:var(--muted);font-weight:700}
+.contact{background:var(--lime);padding:65px 0}
+.contact-inner{display:flex;justify-content:space-between;align-items:center;gap:25px}
+.contact h2{font-size:clamp(30px,4vw,47px);margin:8px 0;color:var(--forest)}
+.contact p{font-size:13px;color:#4b6340}
+.contact .btn{background:var(--forest);color:white}
+footer{background:#092b23;color:#b7c9bd;padding:28px 0;font-size:11px}
+.footer-inner{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+.footer-brand{color:white;font:800 13px Manrope;letter-spacing:.04em}
+@media(max-width:900px){nav{display:none;position:absolute;top:82px;left:0;right:0;background:var(--cream);padding:24px 5%;flex-direction:column;align-items:flex-start;border-bottom:1px solid var(--line)}nav.open{display:flex}.menu{display:block}.nav-btn{display:none}.about-grid,.location-grid,.impact-grid{grid-template-columns:1fr;gap:40px}.about-photo{height:380px}.product-grid{grid-template-columns:1fr 1fr}.process-grid{grid-template-columns:1fr 1fr}.process-step:nth-child(2){border-right:0}.info-grid{grid-template-columns:1fr}.timeline{grid-template-columns:1fr 1fr}}
+@media(max-width:600px){.topline .container span:last-child{display:none}.hero-inner{min-height:600px;padding:70px 0}.hero:before{background:linear-gradient(90deg,rgba(7,35,28,.94),rgba(7,35,28,.66)),url("https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&w=1000&q=80") center/cover}.hero-note{gap:20px;margin-top:42px}.metric-grid{grid-template-columns:1fr 1fr}.metric{padding:12px;border-right:0;border-bottom:1px solid #9fca52}.metric strong{font-size:25px}section{padding:72px 0}.checks{grid-template-columns:1fr}.product-grid,.process-grid,.battery-grid{grid-template-columns:1fr}.process-step{border-right:0;border-bottom:1px solid #ffffff35;margin:0}.timeline{grid-template-columns:1fr 1fr}.future-banner{grid-template-columns:1fr;padding:30px}.target{width:100px;height:100px}.contact-inner{align-items:flex-start;flex-direction:column}.about-photo{height:310px}.photo-tag{left:-5px}.location-image{height:300px}.impact-photo{height:280px}}
+
+/* ===== V3 EXPERIENCE LAYER ===== */
+:root{--forest:#071d18;--forest2:#0d3027;--lime:#c8ff5f;--cream:#f4f6ef;--ink:#11241d;--muted:#718078}
+body{background:#f4f6ef;overflow-x:hidden}
+::selection{background:#c8ff5f;color:#071d18}
+.topline{background:#061712}
+header{background:rgba(7,29,24,.84);border-bottom:1px solid #ffffff18;color:white}
+.brand{color:white}.logo small{color:#9aafa3}
+nav{color:#d1ded5}nav a:hover{color:var(--lime)}
+.nav-btn{background:var(--lime);color:#09251c;border-radius:100px;padding:14px 22px}
+.menu{color:white}
+.hero{background:#061b16;isolation:isolate}
+.hero:before{background:radial-gradient(ellipse at 78% 48%,#1a674a55 0%,transparent 48%),linear-gradient(90deg,#061b16 0%,#061b16e8 43%,#061b1640 100%)}
+.hero-inner{min-height:760px;padding:120px 0 100px}
+#energy-scene{position:absolute;inset:0;width:100%;height:100%;z-index:0;opacity:.92;pointer-events:none}
+.hero-grid-overlay{position:absolute;inset:0;z-index:0;pointer-events:none;opacity:.12;background-image:linear-gradient(#b4edbd 1px,transparent 1px),linear-gradient(90deg,#b4edbd 1px,transparent 1px);background-size:72px 72px;mask-image:linear-gradient(90deg,transparent 8%,black 100%)}
+.hero-copy{max-width:710px;position:relative;z-index:2}
+.hero .kicker{font-size:10px;letter-spacing:.24em}
+h1{font-size:clamp(54px,7.6vw,104px);line-height:.98;letter-spacing:-.075em;margin:30px 0}
+h1 em{background:linear-gradient(110deg,#d9ff8b,#8fe5a4 65%,#b8f7d0);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero-copy p{font-size:16px;max-width:520px;color:#c2d5c9}
+.btn{border-radius:100px;padding:16px 23px}
+.btn-primary{box-shadow:0 0 35px #c8ff5f24}
+.btn-primary:hover{box-shadow:0 8px 40px #c8ff5f42}
+.btn-ghost{border-radius:100px;border-color:#ffffff45}
+.hero-note{max-width:650px;gap:0;margin-top:72px}
+.hero-note>div{padding-right:27px;margin-right:27px;border-right:1px solid #ffffff35}
+.hero-note>div:last-child{border:0}
+.hero-note strong{font-size:20px;letter-spacing:-.04em}
+.metrics{background:#c8ff5f;padding:30px 0}
+.metric strong{font-size:34px;letter-spacing:-.07em}
+.metric span{letter-spacing:.12em}
+.scroll-progress{position:fixed;top:0;left:0;width:0;height:3px;background:var(--lime);z-index:9999;box-shadow:0 0 14px #c8ff5f}
+.ticker{overflow:hidden;background:#0b2b22;color:#d8e7db;padding:18px 0;border-top:1px solid #ffffff12;border-bottom:1px solid #ffffff12}
+.ticker-track{display:flex;align-items:center;gap:42px;width:max-content;animation:tickerMove 28s linear infinite;font:800 11px Manrope;letter-spacing:.22em}
+.ticker-track b{color:var(--lime);font-size:17px}
+@keyframes tickerMove{to{transform:translateX(-50%)}}
+section{padding:120px 0}
+.section-head{margin-bottom:58px}
+.eyebrow{letter-spacing:.23em}
+h2{letter-spacing:-.065em;font-size:clamp(38px,4.6vw,61px)}
+.lead{line-height:1.9}
+.about-photo,.location-image,.impact-photo{overflow:hidden;border-radius:5px}
+.about-photo img,.location-image img,.impact-photo img{transition:transform 1.1s cubic-bezier(.2,.7,.2,1)}
+.about-photo:hover img,.location-image:hover img,.impact-photo:hover img{transform:scale(1.045)}
+.photo-tag{box-shadow:0 16px 50px #071d1825}
+.products{background:#e9eee4}
+.product{border-radius:6px;box-shadow:0 8px 30px #102f2008;transform-style:preserve-3d;will-change:transform}
+.product img{height:245px}
+.product-content{padding:28px}
+.product h3{letter-spacing:-.05em}
+.product-foot b{font-size:23px}
+.process{background:radial-gradient(ellipse at 90% 10%,#1d624b 0%,transparent 40%),#071d18;position:relative;overflow:hidden}
+.process:after{content:"";position:absolute;width:480px;height:480px;border:1px solid #c8ff5f22;border-radius:50%;right:-170px;bottom:-260px;box-shadow:0 0 0 55px #c8ff5f08,0 0 0 110px #c8ff5f05;pointer-events:none}
+.process-step{position:relative;z-index:1}
+.process-step .number{letter-spacing:.16em}
+.process-step h3{font-size:20px;letter-spacing:-.04em}
+.info-card{border-radius:6px;box-shadow:0 12px 35px #102f2008}
+.phase{border-color:#78ad52}
+.future{background:#e8eee3}
+.future-banner{border-radius:7px;background:radial-gradient(circle at 85% 30%,#2a7655 0%,transparent 35%),#08251d;box-shadow:0 22px 65px #0a2d201c}
+.target{box-shadow:0 0 0 12px #c8ff5f0b,0 0 40px #c8ff5f20}
+.battery{border-radius:5px;box-shadow:0 10px 28px #102f2009;transition:transform .3s,box-shadow .3s}
+.battery:hover{transform:translateY(-5px);box-shadow:0 20px 40px #102f2015}
+.job{border-radius:4px;transition:transform .25s}.job:hover{transform:translateY(-4px)}
+.contact{background:linear-gradient(115deg,#c8ff5f,#b5f08a)}
+.contact .btn{border-radius:100px}
+footer{background:#061712}
+.reveal{opacity:0;transform:translateY(34px);transition:opacity .8s ease,transform .8s cubic-bezier(.2,.7,.2,1)}
+.reveal.visible{opacity:1;transform:translateY(0)}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;transition-duration:.01ms!important}.reveal{opacity:1;transform:none}}
+@media(max-width:900px){
+ header{background:rgba(7,29,24,.96)}nav{background:#0b2b22}nav a{color:#e1ece4}
+ .hero-inner{min-height:690px;padding:100px 0 75px}
+ #energy-scene{opacity:.58}
+}
+@media(max-width:600px){
+ .hero-inner{min-height:710px;padding:90px 0 65px}
+ h1{font-size:clamp(52px,14vw,76px)}
+ .hero-note>div{padding-right:14px;margin-right:14px}
+ .hero-note strong{font-size:17px}
+ .ticker-track{gap:25px}
+ section{padding:82px 0}
+ .product img{height:215px}
+}
+
+</style>
+</head>
+<body>
+<div class="topline"><div class="container"><span>GREENFIELD PROJECT · ANDHRA PRADESH, INDIA</span><span>INTEGRATED SOLAR & ENERGY STORAGE</span></div></div>
+<header><div class="container nav">
+<a class="brand" href="#home"><span class="brand-mark">✳</span><span class="logo">YEDLAPALLI<br>GREENENERGY<small>POWERING TOMORROW</small></span></a>
+<nav id="nav"><a href="#about">ABOUT</a><a href="#manufacturing">MANUFACTURING</a><a href="#location">LOCATION</a><a href="#infrastructure">INFRASTRUCTURE</a><a href="#future">TECHNOLOGY</a></nav>
+<a class="nav-btn" href="#contact">CONNECT WITH US ↗</a><button class="menu" id="menu" aria-label="Open menu">☰</button>
+</div></header>
+<main>
+<section class="hero" id="home"><canvas id="energy-scene" aria-label="Animated 3D solar energy installation"></canvas><div class="hero-grid-overlay"></div><div class="container hero-inner"><div class="hero-copy">
+<div class="kicker">A new energy chapter begins</div>
+<h1>Energy for a<br><em>brighter</em> tomorrow.</h1>
+<p>Yedlapalli Greenenergy Private Limited is shaping an integrated clean-energy ecosystem — bringing solar photovoltaic manufacturing and battery energy storage together in Andhra Pradesh.</p>
+<div class="actions"><a class="btn btn-primary" href="#manufacturing">Explore the project <span>↗</span></a><a class="btn btn-ghost" href="#about">Discover our vision</a></div>
+<div class="hero-note"><div><strong>1.2 GW</strong>Solar manufacturing vision</div><div><strong>1 GW / 4 GWh</strong>Proposed BESS capacity</div><div><strong>Vizag</strong>Proposed project location</div></div>
+</div></div></section>
+<div class="scroll-progress" id="scroll-progress"></div><div class="metrics"><div class="container metric-grid">
+<div class="metric"><strong>1.2 GW</strong><span>Integrated solar scope</span></div><div class="metric"><strong>200 acres</strong><span>Proposed project zone</span></div><div class="metric"><strong>1,120+</strong><span>Estimated job opportunities</span></div><div class="metric"><strong>25%+</strong><span>TOPCon cell efficiency target</span></div>
+</div></div>
+<div class="ticker" aria-label="Project focus"><div class="ticker-track"><span>SOLAR INNOVATION</span><b>✳</b><span>ENERGY STORAGE</span><b>✳</b><span>ADVANCED MANUFACTURING</span><b>✳</b><span>MADE FOR TOMORROW</span><b>✳</b><span>SOLAR INNOVATION</span><b>✳</b><span>ENERGY STORAGE</span><b>✳</b><span>ADVANCED MANUFACTURING</span><b>✳</b></div></div><section id="about"><div class="container about-grid">
+<div class="about-photo"><img src="https://images.unsplash.com/photo-1497435334941-8c899ee9e8e9?auto=format&fit=crop&w=1100&q=85" alt="Solar panels in a green landscape"><div class="photo-tag"><b>Clean energy.</b><span>Integrated manufacturing vision</span></div></div>
+<div class="about-copy"><div class="eyebrow">Who we are</div><h2>Building a connected clean-energy future.</h2><p class="lead">The proposed greenfield project brings key stages of the solar value chain under one integrated manufacturing ecosystem — from silicon wafers to solar cells and finished modules.</p><p class="lead">Alongside solar manufacturing, the project includes lithium-ion battery module assembly and a Battery Energy Storage System (BESS), supporting a broader energy transition.</p>
+<div class="checks"><div class="check"><i>✓</i>Integrated solar value chain</div><div class="check"><i>✓</i>N-type TOPCon technology</div><div class="check"><i>✓</i>Bifacial solar modules</div><div class="check"><i>✓</i>Battery storage solutions</div></div>
+</div></div></section>
+<section class="products" id="manufacturing"><div class="container"><div class="section-head"><div class="eyebrow">Our manufacturing vision</div><h2>From silicon to solar power.</h2><p class="lead">A connected production journey designed to serve utility-scale, commercial and industrial solar markets, with export opportunities.</p></div>
+<div class="product-grid">
+<article class="product"><img src="https://images.unsplash.com/photo-1592833159155-c62df1b65634?auto=format&fit=crop&w=900&q=80" alt="Solar manufacturing materials"><div class="product-content"><span class="product-no">01 / MATERIAL FOUNDATION</span><h3>Solar Wafer</h3><p>Mono-crystalline silicon ingot and wafer manufacturing, including cutting, cleaning, sorting and inspection.</p><div class="product-foot"><b>1.2 GW</b><span>Proposed capacity</span></div></div></article>
+<article class="product"><img src="https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?auto=format&fit=crop&w=900&q=80" alt="Solar photovoltaic cells"><div class="product-content"><span class="product-no">02 / CELL TECHNOLOGY</span><h3>TOPCon Solar Cells</h3><p>N-type TOPCon cell manufacturing with a planned cell efficiency target of 25.0–25.5%.</p><div class="product-foot"><b>1.2 GW</b><span>Annual capacity</span></div></div></article>
+<article class="product"><img src="https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&w=900&q=80" alt="Solar photovoltaic module installation"><div class="product-content"><span class="product-no">03 / FINISHED PRODUCT</span><h3>Solar Modules</h3><p>Module assembly with bifacial modules as the principal product, including testing and quality checks.</p><div class="product-foot"><b>1.0 GW</b><span>Annual capacity</span></div></div></article>
+</div></div></section>
+<section class="process"><div class="container"><div class="eyebrow" style="color:var(--lime)">Integrated production flow</div><h2>One value chain. Four key stages.</h2><p class="lead">The proposed solar manufacturing process connects specialist production stages with inspection and quality assurance.</p>
+<div class="process-grid">
+<div class="process-step"><span class="number">01 — INGOT & WAFER</span><h3>Shape the foundation</h3><p>Crystal growth, ingot cropping, wafer slicing, cleaning and sorting.</p></div>
+<div class="process-step"><span class="number">02 — CELL PROCESSING</span><h3>Engineer performance</h3><p>Texturing, diffusion, deposition, passivation, metallization and testing.</p></div>
+<div class="process-step"><span class="number">03 — MODULE ASSEMBLY</span><h3>Build the module</h3><p>Cell stringing, lay-up, lamination, framing and junction-box installation.</p></div>
+<div class="process-step"><span class="number">04 — QUALITY & DISPATCH</span><h3>Validate & deliver</h3><p>EL inspection, flash testing, safety checks, packing and dispatch.</p></div>
+</div></div></section>
+<section id="location"><div class="container location-grid">
+<div class="location-image"><img src="https://images.unsplash.com/photo-1518005020951-eccb494ad742?auto=format&fit=crop&w=1000&q=85" alt="Modern port and industrial city infrastructure"></div>
+<div><div class="eyebrow">Strategic project location</div><h2>Designed for Vizag. Connected to opportunity.</h2><p class="lead">The DPR identifies Visakhapatnam as the proposed location, highlighting its port access, industrial ecosystem and connectivity to domestic markets.</p>
+<div class="reasons">
+<div class="reason"><div class="reason-icon">⚓</div><div><h3>Port connectivity</h3><p>Access to Vizag Port for imported production machinery and materials.</p></div></div>
+<div class="reason"><div class="reason-icon">▦</div><div><h3>Industrial ecosystem</h3><p>Established industrial ecosystem and access to industrial service providers.</p></div></div>
+<div class="reason"><div class="reason-icon">⇄</div><div><h3>Road & rail links</h3><p>Connectivity to major domestic markets and southern and eastern Indian solar markets.</p></div></div>
+<div class="reason"><div class="reason-icon">♧</div><div><h3>Talent & renewable power</h3><p>Access to technical manpower and potential access to renewable electricity procurement.</p></div></div>
+</div></div></div></section>
+<section class="infrastructure" id="infrastructure"><div class="container"><div class="section-head"><div class="eyebrow">Built for scale</div><h2>Infrastructure that supports the vision.</h2><p class="lead">Preliminary planning figures from the project report for the integrated solar photovoltaic manufacturing facility.</p></div>
+<div class="info-grid">
+<div class="info-card"><h3>Solar facility land allocation · 120 acres</h3>
+<div class="data-row"><div class="data-label"><span>Ingot & wafer factory</span><b>25 acres</b></div><div class="track"><div class="fill" style="width:83%"></div></div></div>
+<div class="data-row"><div class="data-label"><span>TOPCon cell factory</span><b>30 acres</b></div><div class="track"><div class="fill" style="width:100%"></div></div></div>
+<div class="data-row"><div class="data-label"><span>Module factory</span><b>10 acres</b></div><div class="track"><div class="fill" style="width:33%"></div></div></div>
+<div class="data-row"><div class="data-label"><span>Warehouse & logistics</span><b>10 acres</b></div><div class="track"><div class="fill" style="width:33%"></div></div></div>
+<div class="data-row"><div class="data-label"><span>Utilities & treatment</span><b>10 acres</b></div><div class="track"><div class="fill" style="width:33%"></div></div></div>
+<div class="data-row"><div class="data-label"><span>Administration</span><b>5 acres</b></div><div class="track"><div class="fill" style="width:17%"></div></div></div>
+<div class="data-row"><div class="data-label"><span>Roads, green belt & expansion</span><b>30 acres</b></div><div class="track"><div class="fill" style="width:100%"></div></div></div>
+</div>
+<div class="info-card"><h3>Preliminary utility requirements</h3>
+<div class="data-row"><div class="data-label"><span>Ingot & wafer connected load</span><b>25–35 MW</b></div><div class="track"><div class="fill" style="width:100%"></div></div></div>
+<div class="data-row"><div class="data-label"><span>TOPCon cell connected load</span><b>15–22 MW</b></div><div class="track"><div class="fill" style="width:63%"></div></div></div>
+<div class="data-row"><div class="data-label"><span>Module manufacturing</span><b>4–6 MW</b></div><div class="track"><div class="fill" style="width:18%"></div></div></div>
+<div class="data-row"><div class="data-label"><span>Utilities, HVAC & common services</span><b>5–8 MW</b></div><div class="track"><div class="fill" style="width:23%"></div></div></div>
+<p style="font-size:12px;color:var(--muted);margin-top:26px">Total connected load: <b>49–71 MW</b><br>Preliminary water demand: <b>1,030–1,525 KLD</b></p>
+</div></div>
+<h3 style="font:700 24px Manrope;color:var(--forest);margin-top:60px">Indicative implementation schedule</h3>
+<div class="timeline">
+<div class="phase"><small>MONTHS 1–2</small><h3>Detailed engineering</h3><p>Engineering and project design.</p></div><div class="phase"><small>MONTHS 3–6</small><h3>Machinery procurement</h3><p>Procurement of production equipment.</p></div><div class="phase"><small>MONTHS 6–15</small><h3>Civil construction</h3><p>Factory and site construction.</p></div><div class="phase"><small>MONTHS 10–18</small><h3>Utility infrastructure</h3><p>Utilities and supporting systems.</p></div><div class="phase"><small>MONTHS 15–20</small><h3>Equipment installation</h3><p>Installation and integration.</p></div><div class="phase"><small>MONTHS 20–22</small><h3>Trial production</h3><p>Initial production and validation.</p></div><div class="phase"><small>MONTHS 22–23</small><h3>Process stabilization</h3><p>Stabilizing manufacturing processes.</p></div><div class="phase"><small>MONTH 24</small><h3>Commercial operation</h3><p>Target start of commercial operations.</p></div>
+</div></div></section>
+<section class="future" id="future"><div class="container"><div class="section-head"><div class="eyebrow">Beyond conventional solar</div><h2>Looking ahead to next-generation energy.</h2><p class="lead">The project roadmap includes advanced solar-cell technology and energy storage solutions.</p></div>
+<div class="future-banner"><div><div class="eyebrow" style="color:var(--lime)">Future technology roadmap</div><h3>TOPCon + Perovskite Tandem Solar Cells</h3><p>The DPR proposes introducing tandem solar cell manufacturing in the next 2–3 years, targeting power conversion efficiency above 33%, with the aim of improving module performance and reducing electricity generation costs.</p></div><div class="target">33%+<small>TARGET EFFICIENCY</small></div></div>
+<div class="battery-grid"><article class="battery"><div class="battery-icon">▣</div><div><h3>Lithium-ion battery module assembly</h3><p>Proposed assembly flow: incoming cell inspection, sorting and matching, module assembly, testing, battery pack assembly, final validation and dispatch. The DPR notes 12 acres for assembly and 120 employment opportunities.</p></div></article><article class="battery"><div class="battery-icon">ϟ</div><div><h3>Battery Energy Storage System</h3><p>A proposed 1 GW / 4 GWh BESS using LFP lithium-ion batteries, with a stated land requirement of 60 acres.</p></div></article></div>
+</div></section>
+<section class="impact"><div class="container impact-grid"><div class="impact-photo"><img src="https://images.unsplash.com/photo-1532601224476-15c79f2f7a51?auto=format&fit=crop&w=1100&q=85" alt="Wind turbines in a green landscape"></div><div><div class="eyebrow">People & progress</div><h2>Creating opportunities through clean-energy manufacturing.</h2><p class="lead">The DPR estimates more than 1,120 direct and indirect employment opportunities across the proposed project.</p><div class="job-numbers"><div class="job"><strong>155</strong><span>Solar wafer manufacturing</span></div><div class="job"><strong>330</strong><span>TOPCon cell & battery manufacturing</span></div><div class="job"><strong>164</strong><span>Solar module manufacturing</span></div><div class="job"><strong>~471</strong><span>Estimated indirect jobs</span></div></div></div></div></section>
+<section class="contact" id="contact"><div class="container contact-inner"><div><div class="eyebrow">Yedlapalli Greenenergy Private Limited</div><h2>Let’s move towards a cleaner tomorrow.</h2><p>Integrated solar manufacturing · Battery assembly · Energy storage</p></div><a class="btn" href="mailto:contact@yedlapalligreenenergy.com">Contact the team ↗</a></div></section>
+</main>
+<footer><div class="container footer-inner"><span class="footer-brand">YEDLAPALLI GREENENERGY</span><span>© <span id="year"></span> Yedlapalli Greenenergy Private Limited</span><span>Proposed project · Visakhapatnam, Andhra Pradesh</span></div></footer>
+<script>
+const menu=document.getElementById('menu'),nav=document.getElementById('nav');
+menu.addEventListener('click',()=>nav.classList.toggle('open'));
+nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>nav.classList.remove('open')));
+document.getElementById('year').textContent=new Date().getFullYear();
+</script>
+
+<script type="module">
+/* Lightweight Three.js scene: a stylised solar field, glowing sun and orbital energy paths. */
+import * as THREE from 'https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js';
+const canvas=document.querySelector('#energy-scene');
+if(canvas && !window.matchMedia('(prefers-reduced-motion: reduce)').matches){
+  const scene=new THREE.Scene();
+  const camera=new THREE.PerspectiveCamera(42,1,.1,100);
+  camera.position.set(0,5.8,15.5);
+  const renderer=new THREE.WebGLRenderer({canvas,alpha:true,antialias:true});
+  renderer.setPixelRatio(Math.min(devicePixelRatio,1.7));
+  renderer.setSize(canvas.clientWidth,canvas.clientHeight,false);
+  renderer.outputColorSpace=THREE.SRGBColorSpace;
+  const group=new THREE.Group(); scene.add(group);
+  scene.add(new THREE.HemisphereLight(0xcaffd9,0x10251e,2.1));
+  const key=new THREE.DirectionalLight(0xc9ff9d,3.2);key.position.set(-4,8,7);scene.add(key);
+  const ground=new THREE.Mesh(new THREE.PlaneGeometry(35,26),new THREE.MeshStandardMaterial({color:0x0b3025,roughness:.85,metalness:.1}));
+  ground.rotation.x=-Math.PI/2;ground.position.y=-1.25;group.add(ground);
+  const panelMat=new THREE.MeshStandardMaterial({color:0x173e59,metalness:.72,roughness:.26,side:THREE.DoubleSide});
+  const frameMat=new THREE.MeshStandardMaterial({color:0x9ab8a4,metalness:.8,roughness:.28});
+  const cells=new THREE.Group();group.add(cells);
+  for(let row=0;row<4;row++){
+    for(let col=0;col<5;col++){
+      const panel=new THREE.Group();
+      const slab=new THREE.Mesh(new THREE.BoxGeometry(1.42,.07,.88),panelMat);
+      slab.position.y=.55;panel.add(slab);
+      const gridMat=new THREE.LineBasicMaterial({color:0x79b5ba,transparent:true,opacity:.62});
+      for(let x=-.48;x<=.49;x+=.32){
+        const line=new THREE.BufferGeometry().setFromPoints([new THREE.Vector3(x,.592,-.4),new THREE.Vector3(x,.592,.4)]);
+        panel.add(new THREE.Line(line,gridMat));
+      }
+      for(let z=-.25;z<=.26;z+=.25){
+        const line=new THREE.BufferGeometry().setFromPoints([new THREE.Vector3(-.68,.592,z),new THREE.Vector3(.68,.592,z)]);
+        panel.add(new THREE.Line(line,gridMat));
+      }
+      const leg=new THREE.Mesh(new THREE.BoxGeometry(.055,.55,.055),frameMat);leg.position.set(0,.25,0);panel.add(leg);
+      panel.position.set((col-2)*1.62,-.65,(row-1.5)*1.35);
+      panel.rotation.x=-.23;cells.add(panel);
+    }
+  }
+  const sun=new THREE.Mesh(new THREE.SphereGeometry(.72,48,48),new THREE.MeshBasicMaterial({color:0xcaff72}));
+  sun.position.set(4.7,3.25,-1.2);group.add(sun);
+  const glow=new THREE.PointLight(0x9dff75,22,15);glow.position.copy(sun.position);group.add(glow);
+  const halo=new THREE.Mesh(new THREE.TorusGeometry(1.02,.012,8,100),new THREE.MeshBasicMaterial({color:0xcaff72,transparent:true,opacity:.7}));
+  halo.position.copy(sun.position);halo.rotation.x=.9;group.add(halo);
+  const orbitMat=new THREE.MeshBasicMaterial({color:0x8ce9a8,transparent:true,opacity:.35});
+  for(let i=0;i<3;i++){
+    const orbit=new THREE.Mesh(new THREE.TorusGeometry(2.1+i*.48,.008,6,120),orbitMat);
+    orbit.position.set(4.7,3.25,-1.2);orbit.rotation.set(.8+i*.16,.2+i*.25,.3);group.add(orbit);
+  }
+  const dustGeo=new THREE.BufferGeometry(),dustCount=260,positions=new Float32Array(dustCount*3);
+  for(let i=0;i<dustCount;i++){positions[i*3]=(Math.random()-.5)*24;positions[i*3+1]=Math.random()*9-1;positions[i*3+2]=(Math.random()-.5)*13-2}
+  dustGeo.setAttribute('position',new THREE.BufferAttribute(positions,3));
+  const dust=new THREE.Points(dustGeo,new THREE.PointsMaterial({color:0xc8ffb0,size:.025,transparent:true,opacity:.7}));scene.add(dust);
+  let pointerX=0,pointerY=0,scrollY=0;
+  window.addEventListener('pointermove',e=>{pointerX=(e.clientX/innerWidth-.5);pointerY=(e.clientY/innerHeight-.5)},{passive:true});
+  window.addEventListener('scroll',()=>{scrollY=window.scrollY},{passive:true});
+  function resize(){const w=canvas.clientWidth,h=canvas.clientHeight;camera.aspect=w/h;camera.updateProjectionMatrix();renderer.setSize(w,h,false)}
+  new ResizeObserver(resize).observe(canvas);
+  const clock=new THREE.Clock();
+  function animate(){
+    requestAnimationFrame(animate);const t=clock.getElapsedTime();
+    cells.rotation.y=Math.sin(t*.16)*.035;
+    group.rotation.y=pointerX*.075+Math.sin(t*.12)*.025;
+    group.rotation.x=-pointerY*.035;
+    sun.position.y=3.25+Math.sin(t*.8)*.09;
+    halo.rotation.z=t*.18;
+    dust.rotation.y=t*.012;
+    camera.position.y=5.8-Math.min(scrollY/900,1)*1.2;
+    renderer.render(scene,camera);
+  }
+  resize();animate();
+}
+</script>
+<script>
+/* Scroll reveals, progress indicator and subtle 3D card tilt. */
+const revealTargets=document.querySelectorAll('section .section-head, .about-grid > *, .product, .process-step, .info-card, .phase, .battery, .job, .impact-grid > *');
+revealTargets.forEach(el=>el.classList.add('reveal'));
+const observer=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('visible');observer.unobserve(entry.target)}}),{threshold:.12});
+revealTargets.forEach(el=>observer.observe(el));
+const progress=document.getElementById('scroll-progress');
+function updateProgress(){const max=document.documentElement.scrollHeight-innerHeight;progress.style.width=(max>0?scrollY/max*100:0)+'%'}
+window.addEventListener('scroll',updateProgress,{passive:true});updateProgress();
+document.querySelectorAll('.product').forEach(card=>{
+ card.addEventListener('pointermove',e=>{if(innerWidth<900)return;const r=card.getBoundingClientRect(),x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;card.style.transform=`perspective(900px) rotateY(${x*7}deg) rotateX(${-y*7}deg) translateY(-5px)`});
+ card.addEventListener('pointerleave',()=>card.style.transform='');
+});
+</script>
+
+</body></html>
